@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Listado de Nombres</title>
-
-    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body onload="actualizarLista()">
     <h1>Formulario de Personas</h1>
@@ -20,6 +19,11 @@
       <label>Ingrese la edad</label><br />
       <input type="number" id="input-edad" min="0" />
       <div class="msg-error" id="msg-error-edad"></div>
+    </div>
+    <div class="form-group">
+      <label>Ingrese el email</label><br />
+      <input type="text" id="input-email" />
+      <div class="msg-error" id="msg-error-email"></div>
     </div>
     <input
       type="button"
@@ -36,11 +40,12 @@
           <th>Eliminar</th>
           <th>Nombre</th>
           <th>Edad</th>
+          <th>Email</th>
         </tr>
       </thead>
       <tbody id="lista-nombres">
         <tr>
-          <td colspan="3">No hay nombres registrados</td>
+          <td colspan="4">No hay nombres registrados</td>
         </tr>
       </tbody>
     </table>
